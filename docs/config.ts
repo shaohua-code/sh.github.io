@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-import { sidebar, nav } from "./router";
+
 
 export default defineConfig({
   lang: "zh-CN",
