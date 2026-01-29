@@ -4,7 +4,7 @@ export default defineConfig({
   lang: "zh-CN",
   title: "zerone",
   description: "alterEgo 技术博客",
-  base: "./",
+  // base: "./",
   // lastUpdated: true,
   themeConfig: {
     logo: "../blogLogo.png",
