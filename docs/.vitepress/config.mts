@@ -1,11 +1,10 @@
 import { defineConfig } from "vitepress";
 
-
 export default defineConfig({
   lang: "zh-CN",
   title: "zerone",
   description: "alterEgo 技术博客",
-  base:"./",
+  base: "./",
   // lastUpdated: true,
   themeConfig: {
     logo: "../blogLogo.png",
@@ -15,13 +14,17 @@ export default defineConfig({
       { text: "Home", link: "/" },
       { text: "Examples", link: "/markdown-examples" },
     ],
+
     sidebar: [
       {
         text: "Examples",
+        items: [
+          { text: "Markdown Examples", link: "/markdown-examples" },
+          { text: "Runtime API Examples", link: "/api-examples" },
+        ],
       },
     ],
 
- 
     // 搜索
     search: {
       provider: "local",
