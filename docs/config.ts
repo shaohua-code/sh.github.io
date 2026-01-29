@@ -1,14 +1,27 @@
 import { defineConfig } from "vitepress";
+import { sidebar, nav } from "./router";
+
 export default defineConfig({
   lang: "zh-CN",
-  title: "VitePress",
-  base: "./",
-  description: "VitePress - The Vite-powered Static Site Generator",
+  title: "zerone",
+  description: "alterEgo 技术博客",
+  // lastUpdated: true,
   themeConfig: {
+    logo: "../blogLogo.png",
+    outlineTitle: "本页目录",
+    outline: [2, 4],
     nav: [
       { text: "Home", link: "/" },
       { text: "Examples", link: "/markdown-examples" },
     ],
+    sidebar: [
+      {
+        text: "Examples",
+      },
+    ],
+
+ 
+    // 搜索
     search: {
       provider: "local",
       options: {
@@ -37,10 +50,5 @@ export default defineConfig({
       prev: "上一页",
       next: "下一页",
     },
-    sidebar: [
-      {
-        text: "Examples",
-      },
-    ],
   },
 });
